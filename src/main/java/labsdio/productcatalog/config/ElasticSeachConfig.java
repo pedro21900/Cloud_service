@@ -16,7 +16,6 @@ import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 
 public class ElasticSeachConfig {
 
-
     @Bean
     public RestHighLevelClient elasticsearchClient() {
         final ClientConfiguration clientConfiguration = ClientConfiguration.builder()
@@ -24,6 +23,7 @@ public class ElasticSeachConfig {
                 .build();
         return RestClients.create(clientConfiguration).rest();
     }
+
     @Bean
     public ElasticsearchOperations elasticsearchTemplate() {
         return new ElasticsearchRestTemplate(elasticsearchClient());
