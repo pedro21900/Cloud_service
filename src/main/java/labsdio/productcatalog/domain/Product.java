@@ -9,6 +9,8 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
+import javax.annotation.Generated;
+
 @Data
 @Builder
 @AllArgsConstructor
@@ -17,9 +19,9 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 public class Product {
     @Id
     private Long id;
-
+    @Field(type = FieldType.Text)
     private String name;
-
+    @Field(type = FieldType.Integer)
     private Integer amount;
 }
 
