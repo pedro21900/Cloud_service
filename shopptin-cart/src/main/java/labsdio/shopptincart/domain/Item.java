@@ -1,3 +1,4 @@
+
 package labsdio.shopptincart.domain;
 
 import lombok.Data;
@@ -9,3 +10,4 @@ public class Item {
     private Integer idproduct;
     private Integer amount;
 }
+

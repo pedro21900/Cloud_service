@@ -6,6 +6,7 @@ import labsdio.shopptincart.repository.CartRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -19,6 +20,9 @@ public class CartService {
 
     public Optional<Cart> findById(String id) {
         return cartRepository.findById(id);
+    }
+    public List<Cart> findAll() {
+        return cartRepository.findAll();
     }
 
     public void delete(String id) {

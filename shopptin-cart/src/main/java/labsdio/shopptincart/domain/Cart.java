@@ -1,3 +1,4 @@
+
 package labsdio.shopptincart.domain;
 
 import labsdio.shopptincart.domain.Item;
@@ -9,17 +10,19 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
 import javax.annotation.Generated;
+import java.io.Serializable;
 import java.util.List;
 
 @Data
 @RedisHash("cart")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Cart {
+public class Cart implements Serializable {
     @Id
     private Long id;
 
     private List<Item> itemList;
 
 }
+
 
