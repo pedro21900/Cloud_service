@@ -33,8 +33,10 @@ dependencies {
     implementation 'com.h2database:h2'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.5.4'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
+
 dependencyManagement {
     imports {
         mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"

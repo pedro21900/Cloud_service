@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/product")
+@RequestMapping("/product")
 @AllArgsConstructor
 public class ProductController {
 
