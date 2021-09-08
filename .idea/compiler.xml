@@ -11,5 +11,10 @@
         <module name="shopptin-cart.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="labsdio.product-catalog" target="11" />
+      <module name="labsdio.product-catalog.main" target="11" />
+      <module name="labsdio.product-catalog.test" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
